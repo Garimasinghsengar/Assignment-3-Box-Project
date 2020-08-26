@@ -1,0 +1,304 @@
+html{
+    height: 100vh;
+}
+    
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family:'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+#top-logo{
+    width: 200px;
+    height: 80px;
+    margin-left: 0;
+}
+
+#top-button{
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    padding: 14px 35px;
+    letter-spacing: 0.8px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+#top-button:hover{
+    color: black;
+    background-color: grey;
+    font-weight: bold;
+}
+
+#top-items-container{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: -200px;
+}
+
+#top-items-container span{
+    padding: 0 10px;
+    color: #D9D9D9;
+    font-weight: 200;
+    font-size: 15px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+#top-items-container span:hover{
+    color:black;
+}
+
+#top-items-container #top-items{
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+main{
+    display: flex;
+  
+}
+#main-left-section{
+    text-align: left;
+    margin-left: 150px;
+    width: 30%;
+    margin-top: 70px;
+}
+
+#btn1{
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #FFE0F9;
+    padding: 12px 30px;
+    color: #6476FF;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    text-decoration: none;
+    outline: none;
+    
+}
+
+
+#main-left-section h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#main-left-section p{
+    color: grey;
+    
+}
+
+#btn2{
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #6A7BFF;
+    padding: 17px 27px;
+    color:white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    outline: none;
+    
+}
+
+
+#btn2:hover{
+    background-color: #85C1E9;
+    
+}
+
+#main-right-section{
+    text-align: left;
+    margin-right: 150px;
+    width: 45%;
+    margin-top: 50px;
+
+}
+
+
+
+#landing-image{
+    width: 750px;
+    height: 550px;
+}
+
+#main-bottom-section{
+    margin-top: 25%;
+    display: flex;
+
+}
+
+#bottom-section{
+    display: flex;
+}
+
+
+#left-arrow-div{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: #6A7BFF;
+    background-color: #6A7BFF;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#left-arrow-div:hover{
+    color: #6A7BFF;
+    background-color: white;
+}
+
+#left-arrow{
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 12px;    
+}
+
+#right-arrow-div{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 2px grey;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#right-arrow-div:hover{
+    color: white;
+    background-color: black;
+}
+
+
+#right-arrow{
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 12px; 
+}
+
+#main-span{
+    margin-left: 80px;
+    margin-top: 0;
+    display: flex;
+}
+
+
+#span1{
+    color:#6A7BFF;
+    font-size:14px;
+    font-weight: bold;
+}
+
+#span2{
+    font-size:14px;
+    font-weight: bold;
+    margin-left: 15px;
+
+}
+
+#hamburger{
+    display: none;
+}
+
+
+@media only screen and (min-width: 601px) {
+    #hamburger{
+        display: none;
+        font-size:20px;
+    }
+
+    #w-main-bottom-section{
+        display: none;
+    }
+  }
+
+
+@media screen and (max-width:600px){
+    nav{
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+        font-size:50px;
+        text-align: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    
+    #landing-image{
+        width: 400px;
+        height: 300px;
+        margin-left: 70px;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        font-family:'Poppins', sans-serif;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+     main{
+        display: block;
+      
+    }
+
+    #main-bottom-section{
+        display: none;
+    }
+
+    #w-main-bottom-section{
+        display: flex;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        margin-top:20px;
+        
+    
+    }
+
+    #main-left-section{
+        text-align: left;
+        margin-left: 150px;
+        width: 30%;
+        margin-top: 30px;
+    }
+
+
+}
